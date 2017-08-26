@@ -32,20 +32,14 @@ namespace Encuesta.Dominio
             telefono = asTelefono;
             direccion = asDireccion;
         }
-        public static Usuario Eliminar()
+        public static Usuario Eliminar( int aiUsuario)
         {
             return new Usuario()
             {
-
+                idusuario = aiUsuario
             };
         }
-        public static Usuario AgregarMediosContacto()
-        {
-            return new Usuario()
-            {
-
-            };
-        }
+        
     }
 
 }
