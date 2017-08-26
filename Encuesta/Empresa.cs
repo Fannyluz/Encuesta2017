@@ -13,5 +13,10 @@ namespace Encuesta.Dominio
         public String telefonoEmpresa { get; set; }
         public String rucEmpresa { get; set; }
         public int idEmpresa { get; set; }
+
+        private Empresa ()
+	    {
+	    }
     }
+
 }
