@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="Encuesta.Dominio.DetalleEncuesta">
+    <Position X="1.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAACAQAAAAAAEAAIAgAAAkAAAAAAAAAAA=</HashCode>
+      <FileName>DetalleEncuesta.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Encuestas" />
+      <Property Name="Preguntas" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Encuesta.Dominio.Empresa">
+    <Position X="10.5" Y="1" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAABIAAAAAAAAAAAAAAAAAQAAAAAAAAAAAACA=</HashCode>
+      <FileName>Empresa.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Encuesta.Dominio.Encuesta">
+    <Position X="6" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAAAUAQAEAAAAAAEAMACAAAAoQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Encuesta.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="empresa" />
+      <Property Name="UsuarioEncuesta" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Encuesta.Dominio.Pregunta">
+    <Position X="5.75" Y="4.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAYAAQAQAAAAEAGAAAEAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pregunta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Encuesta.Dominio.Usuario">
+    <Position X="2.5" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQEIAiAAAAAAAEAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Usuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Encuesta.Dominio.Opciones">
+    <Position X="11" Y="4.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAIAAAAACAAAAAAAQABAAAAAAAAACAA=</HashCode>
+      <FileName>Opciones.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Opcion" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
