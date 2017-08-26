@@ -13,6 +13,10 @@ namespace Encuesta.Infraestructura.Datos
         public IDbSet<Usuario> Usuarios { get; set; }
         public IDbSet<Empresa> Empresas { get; set; }
 
+        // agregadooo
+        public IDbset<Opciones> Opciones { get; set; }
+        public IDbset<Pregunta> Pregunta { get; set; }
+
         public IDbSet<Encuesta.Dominio.Encuesta> Encuestas { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
