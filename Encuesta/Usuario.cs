@@ -32,6 +32,20 @@ namespace Encuesta.Dominio
             telefono = asTelefono;
             direccion = asDireccion;
         }
+        public static Usuario Eliminar()
+        {
+            return new Usuario()
+            {
+
+            };
+        }
+        public static Usuario AgregarMediosContacto()
+        {
+            return new Usuario()
+            {
+
+            };
+        }
     }
 
 }
