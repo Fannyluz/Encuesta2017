@@ -22,6 +22,7 @@ namespace Encuesta.Infraestructura.Datos
             modelBuilder.Configurations.Add(new UsuarioMapeo());
             modelBuilder.Configurations.Add(new EncuestaMapeo());
 
+            //agregacion 
             modelBuilder.Configurations.Add(new OpcionesMapeo());
             modelBuilder.Configurations.Add(new PreguntaMapeo());
             modelBuilder.Configurations.Add(new DetalleEncuesta_Mapeo());

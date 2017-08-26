@@ -14,9 +14,19 @@ namespace Encuesta.Dominio
         public String rucEmpresa { get; set; }
         public int idEmpresa { get; set; }
 
-        private Empresa ()
-	    {
-	    }
+        //agregar empresa 
+         public static Empresa CrearEmpresa(int aiidEmpresa, String asnombreEmpresa,String asdireccionEmpresa, String aiTelefonoEmpresa, String aiRucEmpresa)
+        {
+            return new Empresa()
+            {
+                idEmpresa = aiidEncuesta,
+                nombreEmpresa = asnombreEmpresa,
+                direccionEmpresa = asdireccionEmpresa,
+                telefonoEmpresa = aiTelefonoEmpresa,
+                rucEmpresa = aiRucEmpresa
+
+            };
+        }
     }
 
 }
