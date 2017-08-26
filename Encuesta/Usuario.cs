@@ -34,6 +34,7 @@ namespace Encuesta.Dominio
             telefono = asTelefono;
             direccion = asDireccion;
         }
+
         public static Usuario Eliminar( int aiUsuario)
         {
             return new Usuario()
