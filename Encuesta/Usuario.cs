@@ -13,6 +13,7 @@ namespace Encuesta.Dominio
         public String apellido { get; private set; }
         public String telefono { get; private set; }
         public String direccion { get; private set; }
+        public byte estadoUsuario { get; private set; }
 
         private Usuario()
         {
@@ -23,7 +24,8 @@ namespace Encuesta.Dominio
             return new Usuario()
             {
                 nombre = asNombre,
-                apellido = asApellido
+                apellido = asApellido,
+                estadoUsuario = 1
             };
         }
 
@@ -36,7 +38,7 @@ namespace Encuesta.Dominio
         {
             return new Usuario()
             {
-                idusuario = aiUsuario
+                estadoUsuario = 0
             };
         }
         
