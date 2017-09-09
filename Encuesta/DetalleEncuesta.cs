@@ -26,7 +26,6 @@ namespace Encuesta.Dominio
                 idPregunta = aiidPregunta
             };
 
-
         }
         public void EstablecerRespuesta()
         {
