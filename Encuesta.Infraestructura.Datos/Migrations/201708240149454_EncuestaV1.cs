@@ -58,9 +58,6 @@ namespace Encuesta.Infraestructura.Datos.Migrations
                 "ENCUESTA.DETALLE_ENCUESTA",
                 C => new 
                 {
-        
-                    
-
                          ID_DETALLE_ENCUESTA = c.Int(nullable: false, identity: true),
                         RESPUESTA_PREGUNTA = c.String(nullable: false, maxLength: 30),
                         ID_ENCUESTA =  c.Int(nullable: false),
