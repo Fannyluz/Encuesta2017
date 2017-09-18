@@ -23,12 +23,20 @@ namespace Encuesta.Dominio
         {
 
         }
-        public static Usuario Crear(string asNombre, string asApellido)
+        /// <summary>
+        /// Método que Crea un Usuario
+        /// </summary>
+        /// <param name="asNombre">Nombre del usuario</param>
+        /// <param name="asApellido">Apellido del usuario</param>
+        /// <param name="asClave">Clave del usuario</param>
+        /// <returns>Instancia nueva del usuario</returns>
+        public static Usuario Crear(string asNombre, string asApellido, string asClave)
         {
             return new Usuario()
             {
                 nombre = asNombre,
                 apellido = asApellido,
+                ClaveUsuario = asClave,
                 estadoUsuario = 1
             };
         }
@@ -38,13 +46,12 @@ namespace Encuesta.Dominio
             telefono = asTelefono;
             direccion = asDireccion;
         }
-
-        public static Usuario Eliminar( int aiUsuario)
+        /// <summary>
+        /// Método que elimina la instancia del usuario
+        /// </summary>
+        public void Eliminar()
         {
-            return new Usuario()
-            {
-                estadoUsuario = 0
-            };
+            estadoUsuario = 0;
         }
         
     }

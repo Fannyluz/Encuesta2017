@@ -12,7 +12,7 @@ namespace Encuesta.Pruebas
         [TestMethod]
         public void UsuarioCrearSatisfactorio()
         {
-            var usuario = Usuario.Crear("Juanito", "Perez");
+            var usuario = Usuario.Crear("Diego", "Paucar", "123456");
             var contexto = new EncuestaContexto();
             var repositorio = new Repositorio(contexto);
             repositorio.Adicionar<Usuario>(usuario);
