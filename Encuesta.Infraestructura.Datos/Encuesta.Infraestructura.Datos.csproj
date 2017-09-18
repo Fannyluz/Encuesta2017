@@ -54,9 +54,9 @@
     <Compile Include="Mapeos\OpcionesMapeo.cs" />
     <Compile Include="Mapeos\PreguntaMapeo.cs" />
     <Compile Include="Mapeos\UsuarioMapeo.cs" />
-    <Compile Include="Migrations\201708240149454_EncuestaV1.cs" />
-    <Compile Include="Migrations\201708240149454_EncuestaV1.Designer.cs">
-      <DependentUpon>201708240149454_EncuestaV1.cs</DependentUpon>
+    <Compile Include="Migrations\201709181531225_v2.cs" />
+    <Compile Include="Migrations\201709181531225_v2.Designer.cs">
+      <DependentUpon>201709181531225_v2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -73,8 +73,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201708240149454_EncuestaV1.resx">
-      <DependentUpon>201708240149454_EncuestaV1.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201709181531225_v2.resx">
+      <DependentUpon>201709181531225_v2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -19,7 +19,7 @@ namespace Encuesta.Dominio
         {
             return new Empresa()
             {
-                idEmpresa = aiidEncuesta,
+                idEmpresa = aiidEmpresa,
                 nombreEmpresa = asnombreEmpresa,
                 direccionEmpresa = asdireccionEmpresa,
                 telefonoEmpresa = aiTelefonoEmpresa,

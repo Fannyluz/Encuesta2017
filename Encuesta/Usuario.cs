@@ -13,6 +13,10 @@ namespace Encuesta.Dominio
         public String apellido { get; private set; }
         public String telefono { get; private set; }
         public String direccion { get; private set; }
+        /// <summary>
+        /// Propiedad que requeprenta la contraseña del usuario
+        /// </summary>
+        public string ClaveUsuario { get; set; }
         public byte estadoUsuario { get; private set; }
 
         private Usuario()

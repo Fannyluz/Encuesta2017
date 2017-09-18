@@ -14,8 +14,8 @@ namespace Encuesta.Infraestructura.Datos
         public IDbSet<Empresa> Empresas { get; set; }
 
         // agregadooo
-        public IDbset<Opciones> Opciones { get; set; }
-        public IDbset<Pregunta> Pregunta { get; set; }
+        public IDbSet<Opcion> Opciones { get; set; }
+        public IDbSet<Pregunta> Pregunta { get; set; }
 
         public IDbSet<Encuesta.Dominio.Encuesta> Encuestas { get; set; }
 
@@ -27,7 +27,7 @@ namespace Encuesta.Infraestructura.Datos
             modelBuilder.Configurations.Add(new EncuestaMapeo());
 
             //agregacion 
-            modelBuilder.Configurations.Add(new OpcionesMapeo());
+            modelBuilder.Configurations.Add(new OpcionMapeo());
             modelBuilder.Configurations.Add(new PreguntaMapeo());
             modelBuilder.Configurations.Add(new DetalleEncuesta_Mapeo());
         }

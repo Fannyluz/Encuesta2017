@@ -11,19 +11,18 @@ namespace Encuesta.Dominio
         public int idDetalleEncuesta { get; set; }
         public String respuestaPregunta { get; set; }
         public int idEncuesta { get; set; }
-        public int idPregunta { get; set; }
-        public Encuesta Encuestas { get; set; }
-        public Pregunta Preguntas { get; set; }
+        //public int idPregunta { get; set; }
+        public Encuesta Encuesta { get; set; }
+        public ICollection<Pregunta> Preguntas { get; set; }
 
 
-        public static DetalleEncuesta CrearDetalleEncuesta(int aiidDetalleEncuesta, String asrespuestaPregunta, int aiidEncuesta, int aiidPregunta)
+        public static DetalleEncuesta CrearDetalleEncuesta(int aiidDetalleEncuesta, String asrespuestaPregunta, int aiidEncuesta)
         {
             return new DetalleEncuesta()
             {
                 idDetalleEncuesta = aiidDetalleEncuesta,
                 respuestaPregunta = asrespuestaPregunta,
                 idEncuesta = aiidEncuesta,
-                idPregunta = aiidPregunta
             };
 
         }

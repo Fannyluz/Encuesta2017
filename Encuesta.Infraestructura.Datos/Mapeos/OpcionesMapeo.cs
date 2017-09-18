@@ -3,16 +3,16 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace Encuesta.Infraestructura.Datos.Mapeos
 {
-    public class OpcionesMapeo : EntityTypeConfiguration<Opciones>
+    public class OpcionMapeo : EntityTypeConfiguration<Opcion>
     {
-        public OpcionesMapeo()
+        public OpcionMapeo()
         {
             ToTable("OPCIONES", "ENCUESTA");
             HasKey(k => k.idOpcion);
             Property(p => p.idOpcion).HasColumnName("ID_OPCION").IsRequired();
             Property(p => p.contenido).HasColumnName("CON_OPCION").IsRequired().HasMaxLength(200);
 
-            HasRequired(m => m.Opcion).WithMany().HasForeignKey(f => f.idOpcion);
+            HasRequired(m => m.Pregunta).WithMany().HasForeignKey(f => f.idPregunta);
 
 
 

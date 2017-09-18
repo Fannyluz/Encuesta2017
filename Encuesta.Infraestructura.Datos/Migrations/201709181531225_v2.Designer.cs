@@ -7,13 +7,13 @@ namespace Encuesta.Infraestructura.Datos.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class EncuestaV1 : IMigrationMetadata
+    public sealed partial class v2 : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(EncuestaV1));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(v2));
         
         string IMigrationMetadata.Id
         {
-            get { return "201708240149454_EncuestaV1"; }
+            get { return "201709181531225_v2"; }
         }
         
         string IMigrationMetadata.Source

@@ -6,15 +6,16 @@ using System.Threading.Tasks;
 
 namespace Encuesta.Dominio
 {
-    public class Opciones
+    public class Opcion
     {
         public int idOpcion { get; set; }
         public String contenido { get; set; }
-        public Pregunta Opcion { get; set; }
+        public int idPregunta { get; set; }
+        public Pregunta Pregunta { get; set; }
 
-        public static Opciones CrearOpciones(int aiidOpcion, String ascontenido)
+        public static Opcion CrearOpciones(int aiidOpcion, String ascontenido)
         {
-            return new Opciones()
+            return new Opcion()
             {
                 idOpcion = aiidOpcion,
                 contenido = ascontenido,
