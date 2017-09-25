@@ -181,6 +181,7 @@
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Clemente\" />
+    <Folder Include="Views\Default\" />
     <Folder Include="Views\Fanny\" />
   </ItemGroup>
   <ItemGroup>

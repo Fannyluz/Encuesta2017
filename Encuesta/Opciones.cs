@@ -13,29 +13,28 @@ namespace Encuesta.Dominio
         public int idPregunta { get; set; }
         public Pregunta Pregunta { get; set; }
 
+        // creacion del estado 
+        public byte estadoOpcion { get; set; }
+
         public static Opcion CrearOpciones(int aiidOpcion, String ascontenido)
         {
             return new Opcion()
             {
                 idOpcion = aiidOpcion,
                 contenido = ascontenido,
+                estadoOpcion =1,
             };
 
 
         }
-
         public void modificarOpcion()
         {
 
         }
-
-
         public void Eliminar()
         {
 
         }
-
-
     }
 
 

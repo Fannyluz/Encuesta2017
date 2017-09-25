@@ -16,7 +16,7 @@
   <Class Name="Encuesta.Dominio.Empresa">
     <Position X="10.5" Y="1" Width="3" />
     <TypeIdentifier>
-      <HashCode>AIAAAAAAABIAAAAAAAAAAAAgAAAAQAAAAAAAAAAAACA=</HashCode>
+      <HashCode>AIAAAAAAABIAAAgAAAAAAAAgAAAAQAAAAAAAAAAAACA=</HashCode>
       <FileName>Empresa.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -34,7 +34,7 @@
   <Class Name="Encuesta.Dominio.Pregunta">
     <Position X="5.75" Y="4.5" Width="3" />
     <TypeIdentifier>
-      <HashCode>ACAAgAAAAAYAAQAQAAAAEAGAAAEAQAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>ACAAgAAAAAYAAAAQAAAAEAGAAAEAQAAAAAAAAAAAAAA=</HashCode>
       <FileName>Pregunta.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -54,7 +54,7 @@
   <Class Name="Encuesta.Dominio.Opcion">
     <Position X="11" Y="4.5" Width="2.25" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAQAACIQAAAAAAAAAAAAQABAAAAAAAAACAA=</HashCode>
+      <HashCode>AAAAAAAAAAQAACIRAAAAAAAAAAAAQABAAAAAAAAACAA=</HashCode>
       <FileName>Opciones.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
