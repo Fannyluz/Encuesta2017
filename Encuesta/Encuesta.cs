@@ -21,18 +21,22 @@ namespace Encuesta.Dominio
 
 
 
-        public static Encuesta CrearEncuesta(int aiidEncuesta, String asdescripcion, int idEmpresa, String astipoEncuesta, int aitotalEncuestados, byte iestadoEncuesta, int aiidUsuario)
+        public static Encuesta CrearEncuesta(int aiidEncuesta, String asdescripcion, String astipoEncuesta , 
+                                              Empresa aoempresa, Usuario aousuario,
+                                                 byte iestadoEncuesta , int aitotalEncuestados)
         {
             return new Encuesta()
             {
                 idEncuesta = aiidEncuesta,
                 descripcion = asdescripcion,
-                idEmpresa = idEmpresa,
-                fecha = DateTime.Now,
                 tipoEncuesta = astipoEncuesta,
-                totalEncuestados = aitotalEncuestados,
+                empresa = aoempresa,
+                UsuarioEncuesta = aousuario,
+                fecha = DateTime.Now,
                 estadoEncuesta = iestadoEncuesta,
-                idUsuario = aiidUsuario
+                totalEncuestados = aitotalEncuestados
+                
+                
 
             };
         }
@@ -44,12 +48,12 @@ namespace Encuesta.Dominio
 
         public void Activar()
         {
-
+            estadoEncuesta = 1;
         }
 
         public void Desactivar()
         {
-
+            estadoEncuesta = 0;
         }
     }
 
