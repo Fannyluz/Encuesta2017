@@ -14,6 +14,7 @@ namespace Encuesta.Dominio
         public int idDetalleEncuesta { get; set; }
         public DetalleEncuesta Detalle { get; set; }
         public ICollection<Opcion> Opciones { get; set; }
+        public byte estadoPregunta { get; private set; }
         public static Pregunta CrearPregunta(int aiidPregunta, String ascontenido, String astipoPregunta)
         {
             return new Pregunta()
@@ -21,27 +22,28 @@ namespace Encuesta.Dominio
                 idPregunta = aiidPregunta,
                 contenido = ascontenido,
                 tipoPregunta = astipoPregunta,
+                estadoPregunta = 1,
             };
 
         }
-        public void ModificarPregunta (int aiidPregunta)
+        public void ModificarPregunta (String ascontenido, String asTipoPregunta,int aiiddetalaencuesta)
         {
-            idPregunta = aiidPregunta;
+            contenido = ascontenido;
+            tipoPregunta = asTipoPregunta;
+            idDetalleEncuesta = aiiddetalaencuesta;
         }
         // activar 
         public void Activar()
         {
-           
+            estadoPregunta = 1;
         }
         //desactivar
         public void Desactivar()
         {
+            estadoPregunta = 0;
 
         }
-        public void Eliminar()
-        {
-
-        }
+       
 
     }
 

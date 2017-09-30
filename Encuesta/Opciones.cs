@@ -27,13 +27,15 @@ namespace Encuesta.Dominio
 
 
         }
-        public void modificarOpcion()
+        public void cambiarnombre(string ascontenido)
         {
-
+            contenido = ascontenido;
+            estadoOpcion = 1;
         }
+      
         public void Eliminar()
         {
-
+            estadoOpcion = 0; 
         }
     }
 
